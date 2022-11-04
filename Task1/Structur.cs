@@ -20,12 +20,20 @@ namespace Task1
 
         public string Root()
         {
-            if (k == 0) 
+            if ((k == 0) && (b == 0))
             {
-                return $"Деление на ноль. Найти корень не возможно!";
-            } 
-            double x = -b / k;
-            return $"Корень уравнения {x:f3}";
+                return "Корень любое значение x";
+            }
+            else
+            if (k == 0)
+            {
+                return "Найти корень не возможно!";
+            }
+            else
+            {
+                double x = -b / k;
+                return $"Корень уравнения {x:f3}";
+            }
         }
     }
 }
